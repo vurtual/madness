@@ -127,7 +127,3 @@ function crossBreed(cell) {
 function shrink(cell) {
   changeCellNumber(cell.dataset.number, -1, true)
 }
-
-window.addEventListener('resize', () => {
-  initialize()
-})
