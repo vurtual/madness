@@ -1,4 +1,4 @@
-const cellSize = 70
+const cellSize = 90
 
 export function getSize(elem) {
   const size = {

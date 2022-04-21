@@ -15,7 +15,7 @@ function initialize() {
   clearGameArea()
   const size = getSize(gameArea)
   const cells = layoutCells(size)
-  const interval = setInterval(() => traverseCells(), 300)
+  const interval = setInterval(() => traverseCells(), 600)
 }
 
 function clearGameArea() {
