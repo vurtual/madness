@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  transition: 900ms;
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
+  color: white;
+  --header-height: 0em;
+}
+
+header {
+  width: 100vw;
+  height: var(--header-height);
+}
+
+.game-area {
+  display: grid;
+  width: 100vw;
+  height: calc(100vh - var(--header-height));
+  background-color: black;
+}
+
+.cell {
+  border: 3px solid black;
+  border-radius: 30%;
+  background-color: var(--color);
+  opacity: 0.7;
+}
+
+[data-highlight='1'] {
+  border-color: white;
+}
+
+[data-number='0'] {
+  --color: white;
+}
+[data-number='1'] {
+  --color: green;
+}
+[data-number='2'] {
+  --color: red;
+}
+[data-number='3'] {
+  --color: orange;
+}
+[data-number='4'] {
+  --color: purple;
+}
